@@ -1,0 +1,465 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+    overflow-x: hidden;
+    margin: 5px;
+}
+.nav{
+    display: none;
+}
+nav{
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropdown .dropbtn {
+    font-size: 15px;  
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul li img{
+    width: 80px;
+    height: 40px;
+    background: transparent;
+}
+.cart-icon img{
+    width: 40px;
+    height: 20px;
+}
+nav ul li{
+    list-style: none;
+    height: 40px;
+    margin: 0 5px;
+    padding: 0 5px;
+    display: flex;
+    align-items: center;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+nav ul li:hover{
+    background-color: yellow;
+    border-radius: 0px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 5px;
+    margin: 0 5px;
+}
+.main-container{
+    display: flex;
+    margin-top: 60px;
+}
+.left-container{
+    width: 200px;
+    height: 100%;
+}
+.product{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* padding: 10px;
+    margin: 10px; */
+    width: 100%;
+    padding: 10px 10px;
+    height: 100%;
+}
+.product-card{
+    margin: 5px;
+    /* padding: 10px; */
+    width: 270px;
+    height: 300px;
+    text-align: center;
+    background-color: white;
+    display: grid;
+    grid-gap: 5px;
+    justify-items: center;
+}
+.product-card img{
+    justify-items: center;
+    width: 250px;
+    height: 200px;
+    padding: 10px;
+    cursor: pointer;
+}
+.side-bar{
+    width: 180px;
+    height: fit-content;
+    background-color:transparent;
+    padding: 2px 4px;
+}
+.side-bar ul{
+    list-style: none;
+}
+.side-bar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    padding: 5px;
+}
+.side-bar ul li a:hover{
+    background-color: yellow;
+}
+.side-bar p{
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px;
+}
+.radio-row{
+    margin-left: 5px;
+    padding: 2px 0;
+}
+.radio-row label{
+    font-size: 14px;
+    margin: 2px;
+    padding: 2px;
+    font-weight: 500;
+    color: black;
+}
+input[type="color"]{
+    width: 25px;
+    height: 25px;
+    outline: none;
+    cursor: pointer;
+    margin: 1px;
+    border-radius: 50%;
+    border: none;
+    border: 2px solid whitesmoke;
+}
+.color-select{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+}
+.side-bar-button {
+    margin-top: 10px;
+    display: grid;
+    justify-items: center;
+}
+.side-bar-button button{
+    background-color: yellow;
+    color: black;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 100px;
+}
+.side-bar-button button:hover{
+    background-color: black;
+    color: white;
+}
+.product-content{
+    display: grid;
+    padding: 10px;
+    justify-items: center;
+}
+.product-card p{
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+}
+.product-card a{
+    text-decoration: none;
+    color: brown;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+.product-card button{
+    background-color: yellow;
+    color: black;
+    font-size: 10px;
+    font-weight: 500;
+    padding: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 75px;
+    margin-top: 10px;
+}
+.product-card button:hover{
+    background-color: black;
+    color: white;
+}
+.page{
+    margin-top: 20px;
+}
+.page ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.page ul li{
+    padding: 15px;
+    border: 1px solid black;
+}
+.page ul li:hover{
+    background-color: lightslategray;
+}
+.page ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+}
+.page ul li a:hover{
+    color: white;
+    margin: 0 auto;
+}
+/* footer{
+    margin-top: 20px;
+    margin: 2px ;
+    width: 100%;
+} */
+.footer-details{
+    width: 100%;
+    margin-top: 30px;
+    padding: 0 0;
+    background-color: lightgray;
+}
+.footer-details h1{
+    text-align: center;
+    padding: 20px 0;
+}
+.footer-details p{
+    font-size: 15px;
+    color: black;
+    text-align: left;
+}
+.container-footer{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    /* padding: 10px; */
+}
+.container-footer .col ol li{
+    list-style: none;
+    margin: 10px;
+}
+.col-banner{
+    display: flex;
+    justify-content: center;
+    width: 500px;
+}
+.col-banner img{
+    width: 200px;
+    height: 25px;
+}
+.col ol{
+    display: grid;
+    width: 180px;
+    justify-content: center;
+}
+
+@media screen and (max-width:800px) {
+    body{
+        overflow-x: hidden;
+    }
+    .nav{
+        display: none;
+    }
+    nav{  
+        width: 100%;
+        height: 70px;
+        position: fixed;
+        top: 0;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+    nav ul li img{
+        width: 50px;
+        height: 30px;
+    }
+    .footer-details{
+        border: 5px solid black;
+        width: 1020px;
+    }
+    .footer-details h1{
+        font-size: 15px;
+    }
+    .container-footer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 800px;
+    }
+    .left-banner img{
+        width: 70px;
+        height: 30px;
+    }
+    .col-banner{
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        margin: 5px 20px;
+    }
+    .copy-right{
+        font-size: 10px;
+    }
+    .col-banner p{
+        font-size: 10px;
+    }
+    .col ol li{
+        font-size: 10px;
+
+    }
+}
+
+
+@media screen and (min-width:370px) and (max-width:640px) {
+    nav{display: none;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        z-index: 1000;
+    }
+    .nav img{
+        width: 50px;
+        height: 30px;
+    }
+    .nav ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav ul li{
+        list-style: none;
+        padding: 2px 5px;
+    }
+    .nav ul li a{
+        text-decoration: none;
+        color: black;
+        font-size: 12px;
+        font-weight: 700;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        text-transform: uppercase;
+    }
+    .main-container{
+        margin-top: 30px;
+    }
+
+    .product{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+    }
+    .product-card{
+        margin: 5px;
+        width: 200px;
+        height: 200px;
+        text-align: center;
+    }
+    .product-card img{
+        width: 150px;
+        height: 100px;
+    }
+    .side-bar{
+        width: 250px;
+    }
+    .page{
+        border: 5px solid black;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .page ul{
+        display: flex;
+        justify-content: center;
+    }
+    .footer-details{
+        width: 800px;
+    }
+    .container-footer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+    }
+    .col-banner{
+        float: right;
+        width: 250px;
+    }
+    .left-banner img{
+        width: 70px;
+        height: 20px;
+    }
+    .col ol{
+        display: grid;
+        width: fit-content;
+    }
+}
